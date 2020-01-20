@@ -12,6 +12,8 @@ class App extends Component {
         <p>Friend of Kavya!</p>
 
         <Person />
+        <Person />
+        <Person />
       </div>
     );
     // return React.createElement('div', {className: App}, React.createElement('h1', null, 'From react.create element!!'))
