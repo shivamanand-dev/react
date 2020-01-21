@@ -11,9 +11,8 @@ class App extends Component {
         <h1>Hi, I am Shivam</h1>
         <p>Friend of Kavya!</p>
 
-        <Person />
-        <Person />
-        <Person />
+        <Person name="Shivam" age="22"> loves Kavya</Person>
+        <Person name="Kavya" age="21"/>
       </div>
     );
     // return React.createElement('div', {className: App}, React.createElement('h1', null, 'From react.create element!!'))
