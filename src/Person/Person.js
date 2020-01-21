@@ -4,7 +4,7 @@ var person = (props)=>{
     return (
         <div>
             <p>I'm a { props.name } and I am { props.age } yrs old.</p>
-            <p>{props.children}</p>
+            <p>{ props.children }</p>
         </div>
     )
 }
