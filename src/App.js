@@ -11,7 +11,9 @@ class App extends Component {
         <h1>Hi, I am Shivam</h1>
         <p>Friend of Kavya!</p>
 
-        <Person name="Shivam" age="22"> loves Kavya</Person>
+        <button>Switch name</button>
+
+        <Person name="Shivam" age="22"> Loves Kavya</Person>
         <Person name="Kavya" age="21"/>
       </div>
     );
