@@ -30,7 +30,6 @@ class App extends Component {
         <p>Friend of Kavya!</p>
 
         <button onClick={this.switchNameHandler}>Switch name</button>
-
         <Person name={this.state.persons[0].name} age={this.state.persons[0].age}> Loves {this.state.persons[1].name}</Person>
         <Person name={this.state.persons[1].name} age={this.state.persons[1].age}/>
       </div>
