@@ -26,7 +26,6 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Hi, I am Shivam</h1>
-        
         <p>Friend of Kavya!</p>
 
         <button onClick={this.switchNameHandler}>Switch name</button>
