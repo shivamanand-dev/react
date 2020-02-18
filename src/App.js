@@ -11,12 +11,24 @@ const app = props=> {
     otherState: 'some other value'
   })
 
+
+  const switchNameHandler = () =>{
+  // console.log("Clicked!")
+  setPersonsState({
+    persons : [
+      {name : "Shivam Anand", age: 22},
+      {name : "Kavya", age: 21}
+     ]
+    })
+  }
+
+
     return (
       <div className="App">
         <h1>Hi, I am Shivam</h1>
         <p>Friend of Kavya!</p>
 
-        <button onClick={this.switchNameHandler}>Switch name</button>
+        <button onClick={switchNameHandler}>Switch name</button>
 
         <Person name={personsState.persons[0].name} age={personsState.persons[0].age}> Loves {personsState.persons[1].name}</Person>
         <Person name={personsState.persons[1].name} age={personsState.persons[1].age}/>
@@ -26,13 +38,3 @@ const app = props=> {
   }
 
 export default app;
-
-switchNameHandler = () =>{
-  // console.log("Clicked!")
-  this.setState({
-    persons : [
-      {name : "Shivam Anand", age: 22},
-      {name : "Kavya", age: 21}
-    ]
-  })
-}
