@@ -3,7 +3,7 @@ import './App.css';
 import Person from './Person/Person';
 
 const app = props=> {
-  const stateArr = useState({
+  const [ personsState, setPersonsState ] = useState({
     persons : [
       {name : "Shivam", age: 22},
       {name : "Kavya", age: 21}
