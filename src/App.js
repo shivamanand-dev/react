@@ -18,17 +18,14 @@ const app = props=> {
 
         <button onClick={this.switchNameHandler}>Switch name</button>
 
-        <Person name={this.state.persons[0].name} age={this.state.persons[0].age}> Loves {this.state.persons[1].name}</Person>
-        <Person name={this.state.persons[1].name} age={this.state.persons[1].age}/>
+        <Person name={personsState.persons[0].name} age={personsState.persons[0].age}> Loves {personsState.persons[1].name}</Person>
+        <Person name={personsState.persons[1].name} age={personsState.persons[1].age}/>
       </div>
     );
     // return React.createElement('div', {className: App}, React.createElement('h1', null, 'From react.create element!!'))
   }
 
-
 export default app;
-
-
 
 switchNameHandler = () =>{
   // console.log("Clicked!")
