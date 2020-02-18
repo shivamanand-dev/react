@@ -1,8 +1,15 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Person from './Person/Person';
 
 const app = props=> {
+  const stateArr = useState({
+    persons : [
+      {name : "Shivam", age: 22},
+      {name : "Kavya", age: 21}
+    ],
+    otherState: 'some other value'
+  })
 
     return (
       <div className="App">
@@ -22,13 +29,6 @@ const app = props=> {
 export default app;
 
 
-state = {
-  persons : [
-    {name : "Shivam", age: 22},
-    {name : "Kavya", age: 21}
-  ],
-  otherState: 'some other value'
-}
 
 switchNameHandler = () =>{
   // console.log("Clicked!")
