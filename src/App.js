@@ -2,27 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Person from './Person/Person';
 
-class App extends Component {
+const app = props=> {
 
-  state = {
-    persons : [
-      {name : "Shivam", age: 22},
-      {name : "Kavya", age: 21}
-    ],
-    otherState: 'some other value'
-  }
- 
-  switchNameHandler = () =>{
-    // console.log("Clicked!")
-    this.setState({
-      persons : [
-        {name : "Shivam Anand", age: 22},
-        {name : "Kavya", age: 21}
-      ]
-    })
-  }
-
-  render() {
     return (
       <div className="App">
         <h1>Hi, I am Shivam</h1>
@@ -36,6 +17,25 @@ class App extends Component {
     );
     // return React.createElement('div', {className: App}, React.createElement('h1', null, 'From react.create element!!'))
   }
+
+
+export default app;
+
+
+state = {
+  persons : [
+    {name : "Shivam", age: 22},
+    {name : "Kavya", age: 21}
+  ],
+  otherState: 'some other value'
 }
 
-export default App;
+switchNameHandler = () =>{
+  // console.log("Clicked!")
+  this.setState({
+    persons : [
+      {name : "Shivam Anand", age: 22},
+      {name : "Kavya", age: 21}
+    ]
+  })
+}
