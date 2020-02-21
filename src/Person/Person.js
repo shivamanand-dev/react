@@ -1,9 +1,9 @@
-import React from 'react'
+ import React from 'react'
 
 var person = (props)=>{
     return (
         <div>
-            <p>I'm a { props.name } and I am { props.age } yrs old.</p>
+            <p>I'm { props.name } and I am { props.age } yrs old.</p>
             <p>{ props.children }</p>
         </div>
     )
