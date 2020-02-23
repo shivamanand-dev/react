@@ -33,7 +33,7 @@ class App extends Component {
         <h1>Hi, I am Shivam</h1>
         <p>Friend of Kavya!</p>
 
-        <button onClick={this.switchNameHandler.bind(this, "Shivam Anand")}>
+        <button onClick={() => this.switchNameHandler("Shivam Anand")}>
           Switch name
         </button>
 
