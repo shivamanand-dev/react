@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
 import Person from "./Person/Person";
-import { render } from "react-dom";
 
 class App extends Component {
   state = {
@@ -39,12 +38,21 @@ class App extends Component {
   };
 
   render() {
+    const style = {
+      background: "red",
+      padding: "8px",
+      font: "inherit"
+    };
+
     return (
       <div className="App">
         <h1>Hi, I am Shivam</h1>
         <p>Friend of Kavya!</p>
 
-        <button onClick={() => this.switchNameHandler("Shivam Anand")}>
+        <button
+          style={style}
+          onClick={() => this.switchNameHandler("Shivam Anand")}
+        >
           Switch name
         </button>
 

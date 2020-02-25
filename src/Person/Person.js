@@ -1,8 +1,9 @@
 import React from "react";
+import "./Person.css";
 
 var person = props => {
   return (
-    <div>
+    <div className="Person">
       <p onClick={props.click}>
         I'm {props.name} and I am {props.age} yrs old.
       </p>
