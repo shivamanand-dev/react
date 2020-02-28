@@ -23,7 +23,6 @@ class App extends Component {
         { name: "Kavya", age: 21 },
         { name: "Shilpi", age: 28 }
       ],
-
       otherState: "some other value"
     });
   };
