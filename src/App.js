@@ -21,6 +21,7 @@ class App extends Component {
       persons: [
         { name: newName, age: 22 },
         { name: "Kavya", age: 21 },
+
         { name: "Shilpi", age: 28 }
       ],
       otherState: "some other value"
