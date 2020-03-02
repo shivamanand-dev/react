@@ -14,7 +14,11 @@ class App extends Component {
   };
 
   // console.log(personsState, otherState);
-  deletePersonHandler = () => {};
+  deletePersonHandler = personIndex => {
+    const persons = this.state.persons;
+    persons.splice(personIndex, 1);
+    this.setState({ persons: persons });
+  };
 
   nameChangeHandler = event => {
     this.setState({
@@ -65,7 +69,7 @@ class App extends Component {
         <p>Friend of Kavya!</p>
 
         <button style={style} onClick={this.togglePersonHandler}>
-          Switch name
+          Toggle Person
         </button>
         {persons}
       </div>
