@@ -6,7 +6,7 @@ class App extends Component {
   state = {
     persons: [
       { name: "Shivam", age: 22 },
-      { name: "Kavya", age: 21 },
+      { name: "Vipul", age: 26 },
       { name: "Shilpi", age: 28 }
     ],
     otherState: "some other value",
@@ -24,7 +24,7 @@ class App extends Component {
     this.setState({
       persons: [
         { name: "Shivam Anand", age: 22 },
-        { name: "Kavya", age: 21 },
+        { name: "Vipul", age: 26 },
         { name: event.target.value, age: 28 }
       ],
       otherState: "some other value"
@@ -66,7 +66,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Hi, I am Shivam</h1>
-        <p>Friend of Kavya!</p>
+        <p>Hello World!</p>
 
         <button style={style} onClick={this.togglePersonHandler}>
           Toggle Person
