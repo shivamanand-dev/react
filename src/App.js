@@ -9,7 +9,7 @@ class App extends Component {
       { id: "a2", name: "Vipul", age: 26 },
       { id: "a3", name: "Shilpi", age: 28 }
     ],
-    otherState: "some other value",
+    userInput: "",
     showPersons: false
   };
 
@@ -41,6 +41,12 @@ class App extends Component {
     this.setState({ showPersons: !doesShow });
   };
 
+  // asignment
+
+  inputChangedHandler = event => {
+    this.setState({ userInput: event.target.value });
+  };
+
   render() {
     const style = {
       background: "#fff",
@@ -48,7 +54,8 @@ class App extends Component {
       font: "inherit",
       borderRadius: "5px",
       cursor: "pointer",
-      border: "3px solid #ccc"
+      border: "3px solid #ccc",
+      marginBottom: "50px"
     };
 
     let persons = null;
@@ -61,6 +68,7 @@ class App extends Component {
                 click={() => this.deletePersonHandler(index)}
                 name={person.name}
                 age={person.age}
+                value={person.name}
                 key={person.id}
                 changed={event => this.nameChangeHandler(event, person.id)}
               />
@@ -79,6 +87,16 @@ class App extends Component {
           Toggle Person
         </button>
         {persons}
+        <hr />
+
+        {/* Assignment */}
+
+        <input
+          type="text"
+          onChange={this.inputChangedHandler}
+          value={this.state.userInput}
+        />
+        <p>{this.state.userInput}</p>
       </div>
     );
     // return React.createElement('div', {className: App}, React.createElement('h1', null, 'From react.create element!!'))
