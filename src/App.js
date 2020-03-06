@@ -9,8 +9,7 @@ class App extends Component {
       { id: "a2", name: "Vipul", age: 26 },
       { id: "a3", name: "Shilpi", age: 28 }
     ],
-    userInput: "",
-    showPersons: false
+    otherState: "some other value"
   };
 
   // console.log(personsState, otherState);
@@ -39,12 +38,6 @@ class App extends Component {
   togglePersonHandler = () => {
     const doesShow = this.state.showPersons;
     this.setState({ showPersons: !doesShow });
-  };
-
-  // asignment
-
-  inputChangedHandler = event => {
-    this.setState({ userInput: event.target.value });
   };
 
   render() {
@@ -88,15 +81,6 @@ class App extends Component {
         </button>
         {persons}
         <hr />
-
-        {/* Assignment */}
-
-        <input
-          type="text"
-          onChange={this.inputChangedHandler}
-          value={this.state.userInput}
-        />
-        <p>{this.state.userInput}</p>
       </div>
     );
     // return React.createElement('div', {className: App}, React.createElement('h1', null, 'From react.create element!!'))
