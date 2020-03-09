@@ -41,20 +41,9 @@ class App extends Component {
   };
 
   render() {
-    const style = {
-      background: "Green",
-      padding: "8px",
-      font: "inherit",
-      borderRadius: "5px",
-      cursor: "pointer",
-      border: "3px solid #ccc",
-      marginBottom: "50px",
-      ":hover": {
-        background: "LightGreen"
-      }
-    };
-
     let persons = null;
+    let btnClasses = "";
+
     if (this.state.showPersons) {
       persons = (
         <div>
@@ -72,8 +61,7 @@ class App extends Component {
           })}
         </div>
       );
-      style.background = "red";
-      style.color = "#fff";
+      btnClasses = classes.red;
     }
 
     const assignedClasses = [];
@@ -89,7 +77,7 @@ class App extends Component {
         <h1>Hi, I am Shivam</h1>
         <p className={assignedClasses.join(" ")}>Hello World!</p>
 
-        <button style={style} onClick={this.togglePersonHandler}>
+        <button className={btnClasses} onClick={this.togglePersonHandler}>
           Toggle Person
         </button>
         {persons}
