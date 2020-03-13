@@ -65,7 +65,6 @@ class App extends Component {
         />
       );
     }
-
     return (
       <div className={classes.App}>
         <Cockpit
